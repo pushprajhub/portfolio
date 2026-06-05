@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pushpraj Ghritlahare | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <span class="logo">PG<span class="dot">.</span></span>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal delay-1">Pushpraj<br><span>Ghritlahare</span></h1>
+        <div class="hero-roles reveal delay-2">
+          <span class="role-tag">Internal Auditor</span>
+          <span class="role-tag">HR Professional</span>
+          <span class="role-tag">Data Analyst</span>
+          <span class="role-tag">MBA</span>
+        </div>
+        <p class="hero-tagline reveal delay-3">
+          Turning numbers into narratives & audits into insights.
+        </p>
+        <div class="hero-cta reveal delay-4">
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+          <a href="#about" class="btn-ghost">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-right reveal delay-2">
+        <div class="profile-ring">
+          <div class="profile-img-wrap">
+            <img src="profile-pic.jpg" alt="Pushpraj Ghritlahare" class="profile-img" />
+          </div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <svg class="ring-text-svg" viewBox="0 0 300 300">
+            <defs>
+              <path id="circle-text" d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0"/>
+            </defs>
+            <text class="ring-text">
+              <textPath href="#circle-text">
+                MBA · Internal Auditor · Data Analyst · HR Professional · Power BI · Tableau ·
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal delay-1">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal delay-2">
+          <p>
+            MBA student with hands-on experience in <strong>internal auditing within the banking sector</strong>. 
+            Proficient in <strong>Power BI</strong> and <strong>Tableau</strong> for business dashboard development. 
+            Skilled in risk assessment, compliance, and data analysis.
+          </p>
+          <p>
+            Eager to leverage academic knowledge and practical expertise in finance, audit, and 
+            analytics-focused roles within dynamic organizations.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-count="1.5">0</span><span>+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="4">0</span>
+              <span class="stat-label">Tools Mastered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="2">0</span>
+              <span class="stat-label">Companies Worked</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal delay-3">
+          <div class="info-row"><span class="info-icon">🎓</span><div><strong>Degree</strong><p>MBA – ITM University Raipur</p></div></div>
+          <div class="info-row"><span class="info-icon">🏦</span><div><strong>Domain</strong><p>Banking & Finance</p></div></div>
+          <div class="info-row"><span class="info-icon">📊</span><div><strong>Expertise</strong><p>Internal Audit · Data Analytics</p></div></div>
+          <div class="info-row"><span class="info-icon">📍</span><div><strong>Location</strong><p>Raipur, Chhattisgarh</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section alt-section">
+    <div class="section-inner">
+      <div class="section-label reveal">Academic Background</div>
+      <h2 class="section-title reveal delay-1">Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023 – Present</span>
+            <h3>MBA</h3>
+            <p>ITM University, Raipur</p>
+            <span class="tl-badge">Finance & HR</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2020 – 2023</span>
+            <h3>BBA</h3>
+            <p>Govt. J.P. Verma College</p>
+            <span class="tl-badge">Business Administration</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2020</span>
+            <h3>12th Grade</h3>
+            <p>St. Xavier School</p>
+            <span class="tl-badge">Commerce</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2018</span>
+            <h3>10th Grade</h3>
+            <p>St. Xavier School</p>
+            <span class="tl-badge">General</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-label reveal">Work History</div>
+      <h2 class="section-title reveal delay-1">Experience</h2>
+      <div class="exp-grid">
+
+        <div class="exp-card reveal delay-2">
+          <div class="exp-top">
+            <div class="exp-icon">🏦</div>
+            <span class="exp-duration">Dec 2023 – May 2025</span>
+          </div>
+          <h3>Internal Auditor</h3>
+          <h4>ESAF Small Finance Bank</h4>
+          <ul class="exp-list">
+            <li>Conducted risk-based internal audits across branches</li>
+            <li>Evaluated compliance with banking regulations & RBI norms</li>
+            <li>Prepared audit reports with actionable recommendations</li>
+            <li>Analyzed financial data to detect discrepancies</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Risk Assessment</span>
+            <span>Compliance</span>
+            <span>Banking</span>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-3">
+          <div class="exp-top">
+            <div class="exp-icon">🌿</div>
+            <span class="exp-duration">July 2025 – Sept 2025</span>
+          </div>
+          <h3>Internal Audit</h3>
+          <h4>Nature Touch Pvt. Ltd</h4>
+          <ul class="exp-list">
+            <li>Reviewed internal control systems and processes</li>
+            <li>Prepared detailed audit findings & management reports</li>
+            <li>Supported operational efficiency improvements</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Audit</span>
+            <span>Controls</span>
+            <span>Reporting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section alt-section">
+    <div class="section-inner">
+      <div class="section-label reveal">Capabilities</div>
+      <h2 class="section-title reveal delay-1">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">📊</div>
+          <h3>Power BI</h3>
+          <p>Interactive dashboards, DAX formulas, data modeling & visual reporting</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">📈</div>
+          <h3>Tableau</h3>
+          <p>Business intelligence, visual analytics & storytelling with data</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-icon">📋</div>
+          <h3>Excel</h3>
+          <p>Advanced formulas, pivot tables, data cleaning & financial modeling</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-icon">💼</div>
+          <h3>Tally Prime</h3>
+          <p>Accounting, GST filing, payroll management & financial statements</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">🔍</div>
+          <h3>Internal Audit</h3>
+          <p>Risk-based auditing, compliance testing, control evaluation</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">👥</div>
+          <h3>Human Resources</h3>
+          <p>Recruitment, onboarding, performance management & HR analytics</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal delay-1">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal delay-2">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 00000000</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>pushpraj@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <p>Raipur, Chhattisgarh, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🎓</div>
+            <div>
+              <strong>University</strong>
+              <p>ITM University, Raipur</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form reveal delay-3">
+          <div class="form-group">
+            <input type="text" id="cName" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <input type="email" id="cEmail" placeholder="Your Email" />
+          </div>
+          <div class="form-group">
+            <textarea id="cMsg" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn-primary full-btn" id="sendBtn">Send Message ✉️</button>
+          <div class="form-msg" id="formMsg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed & Built by <strong>Pushpraj Ghritlahare</strong> · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
